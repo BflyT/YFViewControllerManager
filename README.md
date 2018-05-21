@@ -1,0 +1,2 @@
+# YFViewControllerManager
+可在非视图类获取当前显示控制器，无论界面如何push和present都能原路返回
