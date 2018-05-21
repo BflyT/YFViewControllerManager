@@ -1,0 +1,436 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E51AF20220B2627200873813 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E51AF20120B2627200873813 /* AppDelegate.m */; };
+		E51AF20A20B2627300873813 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E51AF20920B2627300873813 /* Assets.xcassets */; };
+		E51AF20D20B2627300873813 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E51AF20B20B2627300873813 /* LaunchScreen.storyboard */; };
+		E51AF21020B2627300873813 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E51AF20F20B2627300873813 /* main.m */; };
+		E51AF22020B2632100873813 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E51AF21820B2632100873813 /* BaseNavigationController.m */; };
+		E51AF22320B2632100873813 /* RootTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = E51AF21F20B2632100873813 /* RootTabBarController.m */; };
+		E51AF22A20B2635100873813 /* UIImage+ZMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E51AF22920B2635100873813 /* UIImage+ZMExtension.m */; };
+		E51AF22D20B2636A00873813 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E51AF22C20B2636A00873813 /* HomeViewController.m */; };
+		E51AF23020B2637900873813 /* StarsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E51AF22F20B2637900873813 /* StarsViewController.m */; };
+		E51AF23320B2638800873813 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E51AF23220B2638800873813 /* MineViewController.m */; };
+		E51AF23620B264FF00873813 /* UIBarButtonItem+ZMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E51AF23520B264FF00873813 /* UIBarButtonItem+ZMExtension.m */; };
+		E51AF23920B2658300873813 /* LoginNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E51AF23820B2658300873813 /* LoginNavViewController.m */; };
+		E51AF23C20B2659500873813 /* WhiteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E51AF23B20B2659500873813 /* WhiteViewController.m */; };
+		E51AF23F20B26ACE00873813 /* LogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E51AF23E20B26ACE00873813 /* LogViewController.m */; };
+		E51AF24220B26BBD00873813 /* BackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E51AF24120B26BBD00873813 /* BackViewController.m */; };
+		E51AF24520B26E5300873813 /* CyanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E51AF24420B26E5300873813 /* CyanViewController.m */; };
+		E51AF24920B26F6A00873813 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E51AF24820B26F6A00873813 /* Foundation.framework */; };
+		E51AF24B20B26F6F00873813 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E51AF24A20B26F6F00873813 /* UIKit.framework */; };
+		E51AF24D20B26F7A00873813 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E51AF24C20B26F7A00873813 /* SystemConfiguration.framework */; };
+		E51AF25020B26FB000873813 /* YFViewControllerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E51AF24F20B26FB000873813 /* YFViewControllerManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E51AF1FD20B2627100873813 /* YF_ViewControllerManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YF_ViewControllerManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E51AF20020B2627200873813 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E51AF20120B2627200873813 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E51AF20920B2627300873813 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E51AF20C20B2627300873813 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E51AF20E20B2627300873813 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E51AF20F20B2627300873813 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E51AF21720B2632100873813 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		E51AF21820B2632100873813 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		E51AF21E20B2632100873813 /* RootTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootTabBarController.h; sourceTree = "<group>"; };
+		E51AF21F20B2632100873813 /* RootTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTabBarController.m; sourceTree = "<group>"; };
+		E51AF22820B2635100873813 /* UIImage+ZMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ZMExtension.h"; sourceTree = "<group>"; };
+		E51AF22920B2635100873813 /* UIImage+ZMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZMExtension.m"; sourceTree = "<group>"; };
+		E51AF22B20B2636A00873813 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		E51AF22C20B2636A00873813 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		E51AF22E20B2637900873813 /* StarsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StarsViewController.h; sourceTree = "<group>"; };
+		E51AF22F20B2637900873813 /* StarsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StarsViewController.m; sourceTree = "<group>"; };
+		E51AF23120B2638800873813 /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		E51AF23220B2638800873813 /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		E51AF23420B264FF00873813 /* UIBarButtonItem+ZMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+ZMExtension.h"; sourceTree = "<group>"; };
+		E51AF23520B264FF00873813 /* UIBarButtonItem+ZMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+ZMExtension.m"; sourceTree = "<group>"; };
+		E51AF23720B2658300873813 /* LoginNavViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginNavViewController.h; sourceTree = "<group>"; };
+		E51AF23820B2658300873813 /* LoginNavViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginNavViewController.m; sourceTree = "<group>"; };
+		E51AF23A20B2659500873813 /* WhiteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WhiteViewController.h; sourceTree = "<group>"; };
+		E51AF23B20B2659500873813 /* WhiteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WhiteViewController.m; sourceTree = "<group>"; };
+		E51AF23D20B26ACE00873813 /* LogViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogViewController.h; sourceTree = "<group>"; };
+		E51AF23E20B26ACE00873813 /* LogViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogViewController.m; sourceTree = "<group>"; };
+		E51AF24020B26BBD00873813 /* BackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BackViewController.h; sourceTree = "<group>"; };
+		E51AF24120B26BBD00873813 /* BackViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BackViewController.m; sourceTree = "<group>"; };
+		E51AF24320B26E5300873813 /* CyanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CyanViewController.h; sourceTree = "<group>"; };
+		E51AF24420B26E5300873813 /* CyanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CyanViewController.m; sourceTree = "<group>"; };
+		E51AF24820B26F6A00873813 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E51AF24A20B26F6F00873813 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E51AF24C20B26F7A00873813 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		E51AF24E20B26FB000873813 /* YFViewControllerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFViewControllerManager.h; sourceTree = "<group>"; };
+		E51AF24F20B26FB000873813 /* YFViewControllerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFViewControllerManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E51AF1FA20B2627100873813 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E51AF24D20B26F7A00873813 /* SystemConfiguration.framework in Frameworks */,
+				E51AF24B20B26F6F00873813 /* UIKit.framework in Frameworks */,
+				E51AF24920B26F6A00873813 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E51AF1F420B2627100873813 = {
+			isa = PBXGroup;
+			children = (
+				E51AF1FF20B2627100873813 /* YF_ViewControllerManager */,
+				E51AF1FE20B2627100873813 /* Products */,
+				E51AF24720B26F6900873813 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E51AF1FE20B2627100873813 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E51AF1FD20B2627100873813 /* YF_ViewControllerManager.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E51AF1FF20B2627100873813 /* YF_ViewControllerManager */ = {
+			isa = PBXGroup;
+			children = (
+				E51AF22420B2632700873813 /* ViewConttrollerManager */,
+				E51AF21620B2632100873813 /* root */,
+				E51AF20020B2627200873813 /* AppDelegate.h */,
+				E51AF20120B2627200873813 /* AppDelegate.m */,
+				E51AF20920B2627300873813 /* Assets.xcassets */,
+				E51AF20B20B2627300873813 /* LaunchScreen.storyboard */,
+				E51AF20E20B2627300873813 /* Info.plist */,
+				E51AF20F20B2627300873813 /* main.m */,
+				E51AF22B20B2636A00873813 /* HomeViewController.h */,
+				E51AF22C20B2636A00873813 /* HomeViewController.m */,
+				E51AF22E20B2637900873813 /* StarsViewController.h */,
+				E51AF22F20B2637900873813 /* StarsViewController.m */,
+				E51AF23120B2638800873813 /* MineViewController.h */,
+				E51AF23220B2638800873813 /* MineViewController.m */,
+				E51AF23720B2658300873813 /* LoginNavViewController.h */,
+				E51AF23820B2658300873813 /* LoginNavViewController.m */,
+				E51AF23D20B26ACE00873813 /* LogViewController.h */,
+				E51AF23E20B26ACE00873813 /* LogViewController.m */,
+				E51AF23A20B2659500873813 /* WhiteViewController.h */,
+				E51AF23B20B2659500873813 /* WhiteViewController.m */,
+				E51AF24320B26E5300873813 /* CyanViewController.h */,
+				E51AF24420B26E5300873813 /* CyanViewController.m */,
+				E51AF24020B26BBD00873813 /* BackViewController.h */,
+				E51AF24120B26BBD00873813 /* BackViewController.m */,
+			);
+			path = YF_ViewControllerManager;
+			sourceTree = "<group>";
+		};
+		E51AF21620B2632100873813 /* root */ = {
+			isa = PBXGroup;
+			children = (
+				E51AF21720B2632100873813 /* BaseNavigationController.h */,
+				E51AF21820B2632100873813 /* BaseNavigationController.m */,
+				E51AF21E20B2632100873813 /* RootTabBarController.h */,
+				E51AF21F20B2632100873813 /* RootTabBarController.m */,
+				E51AF23420B264FF00873813 /* UIBarButtonItem+ZMExtension.h */,
+				E51AF23520B264FF00873813 /* UIBarButtonItem+ZMExtension.m */,
+				E51AF22820B2635100873813 /* UIImage+ZMExtension.h */,
+				E51AF22920B2635100873813 /* UIImage+ZMExtension.m */,
+			);
+			path = root;
+			sourceTree = "<group>";
+		};
+		E51AF22420B2632700873813 /* ViewConttrollerManager */ = {
+			isa = PBXGroup;
+			children = (
+				E51AF24E20B26FB000873813 /* YFViewControllerManager.h */,
+				E51AF24F20B26FB000873813 /* YFViewControllerManager.m */,
+			);
+			path = ViewConttrollerManager;
+			sourceTree = "<group>";
+		};
+		E51AF24720B26F6900873813 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E51AF24C20B26F7A00873813 /* SystemConfiguration.framework */,
+				E51AF24A20B26F6F00873813 /* UIKit.framework */,
+				E51AF24820B26F6A00873813 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E51AF1FC20B2627100873813 /* YF_ViewControllerManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E51AF21320B2627300873813 /* Build configuration list for PBXNativeTarget "YF_ViewControllerManager" */;
+			buildPhases = (
+				E51AF1F920B2627100873813 /* Sources */,
+				E51AF1FA20B2627100873813 /* Frameworks */,
+				E51AF1FB20B2627100873813 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YF_ViewControllerManager;
+			productName = YF_ViewControllerManager;
+			productReference = E51AF1FD20B2627100873813 /* YF_ViewControllerManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E51AF1F520B2627100873813 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = jyzx;
+				TargetAttributes = {
+					E51AF1FC20B2627100873813 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = E51AF1F820B2627100873813 /* Build configuration list for PBXProject "YF_ViewControllerManager" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E51AF1F420B2627100873813;
+			productRefGroup = E51AF1FE20B2627100873813 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E51AF1FC20B2627100873813 /* YF_ViewControllerManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E51AF1FB20B2627100873813 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E51AF20D20B2627300873813 /* LaunchScreen.storyboard in Resources */,
+				E51AF20A20B2627300873813 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E51AF1F920B2627100873813 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E51AF22320B2632100873813 /* RootTabBarController.m in Sources */,
+				E51AF23020B2637900873813 /* StarsViewController.m in Sources */,
+				E51AF23C20B2659500873813 /* WhiteViewController.m in Sources */,
+				E51AF22A20B2635100873813 /* UIImage+ZMExtension.m in Sources */,
+				E51AF23320B2638800873813 /* MineViewController.m in Sources */,
+				E51AF23620B264FF00873813 /* UIBarButtonItem+ZMExtension.m in Sources */,
+				E51AF22020B2632100873813 /* BaseNavigationController.m in Sources */,
+				E51AF23F20B26ACE00873813 /* LogViewController.m in Sources */,
+				E51AF22D20B2636A00873813 /* HomeViewController.m in Sources */,
+				E51AF24520B26E5300873813 /* CyanViewController.m in Sources */,
+				E51AF21020B2627300873813 /* main.m in Sources */,
+				E51AF24220B26BBD00873813 /* BackViewController.m in Sources */,
+				E51AF25020B26FB000873813 /* YFViewControllerManager.m in Sources */,
+				E51AF23920B2658300873813 /* LoginNavViewController.m in Sources */,
+				E51AF20220B2627200873813 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E51AF20B20B2627300873813 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E51AF20C20B2627300873813 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E51AF21120B2627300873813 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E51AF21220B2627300873813 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E51AF21420B2627300873813 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V4YAFQAVW3;
+				INFOPLIST_FILE = YF_ViewControllerManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.viewControllerManager.yf.YF-ViewControllerManager";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E51AF21520B2627300873813 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V4YAFQAVW3;
+				INFOPLIST_FILE = YF_ViewControllerManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.viewControllerManager.yf.YF-ViewControllerManager";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E51AF1F820B2627100873813 /* Build configuration list for PBXProject "YF_ViewControllerManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E51AF21120B2627300873813 /* Debug */,
+				E51AF21220B2627300873813 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E51AF21320B2627300873813 /* Build configuration list for PBXNativeTarget "YF_ViewControllerManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E51AF21420B2627300873813 /* Debug */,
+				E51AF21520B2627300873813 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E51AF1F520B2627100873813 /* Project object */;
+}
