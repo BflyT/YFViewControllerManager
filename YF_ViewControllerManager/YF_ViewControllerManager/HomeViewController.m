@@ -15,6 +15,11 @@
 
 @implementation HomeViewController
 
+//- (void)viewWillAppear:(BOOL)animated{
+//    [super viewWillAppear:animated];
+//    self.tabBarController.tabBar.hidden = NO;
+//}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
@@ -23,6 +28,7 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     WhiteViewController *whitevc = [[WhiteViewController alloc] init];
+//    self.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:whitevc animated:YES];
 }
 

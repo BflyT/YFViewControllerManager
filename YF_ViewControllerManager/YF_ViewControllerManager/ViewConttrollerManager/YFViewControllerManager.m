@@ -12,12 +12,12 @@
 
 @implementation YFViewControllerManager
 
-//这里的参数 0.2 0.3是随手写的，如果要自定义动画速度可以调整这两个参数
+//这里的参数 是随手写的，如果要自定义动画速度可以调整这两个参数
 static int presentCount = 0;
 static int pushCount = 0;
 
 static float dismissSpeed = 0.2;
-static float popSpeed = 0.3;
+static float popSpeed = 0.25;
 
 + (instancetype)sharedInstance{
     static YFViewControllerManager *sharedInstance = nil;
@@ -40,11 +40,11 @@ static float popSpeed = 0.3;
     //首先如果在根控制器则不用返回
     if ([curVC isKindOfClass:[RootTabBarController class]]) {
         RootTabBarController *rootVC = (RootTabBarController *)curVC;
-        NSLog(@"%@---- %d -----%d    1", [curVC class], presentCount, pushCount);
+        
         //这里要做一些处理，因为在实际测试中会发现dismiss之后，curVC会是tabbar，但是并没有真正返回到tabbar，故此处需要重新校验是否已经结束
         //具体的逻辑需要根据实际业务架构来调整
         if (rootVC.childViewControllers[rootVC.selectedIndex].childViewControllers.count > 1) {
-            NSLog(@"%@---- %d -----%d   4", [curVC class], presentCount, pushCount);
+//            NSLog(@"%@---- %d -----%d   4", [curVC class], presentCount, pushCount);
             return [self yf_closeAllViewControllers:rootVC.childViewControllers[rootVC.selectedIndex]];
         }
         if ([rootVC.childViewControllers[rootVC.selectedIndex].childViewControllers.lastObject presentingViewController]){
@@ -52,6 +52,7 @@ static float popSpeed = 0.3;
         }
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)((dismissSpeed*presentCount + popSpeed*pushCount) * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [rootVC setSelectedIndex:0];
+            NSLog(@"%@---- %d -----%d    1", [curVC class], presentCount, pushCount);
             return;
         });
     }
@@ -60,10 +61,10 @@ static float popSpeed = 0.3;
     //因为如果要有nav的返回动画就不能先dismiss，nav有可能就是present出来的
     if ([curVC isKindOfClass:[UINavigationController class]] && curVC.childViewControllers.count > 1) {
         pushCount ++;
-        NSLog(@"%@---- pr: %d ----- pu: %d    2", [curVC class], presentCount, pushCount);
+//        NSLog(@"%@---- pr: %d ----- pu: %d    2", [curVC class], presentCount, pushCount);
         UINavigationController *nav = (UINavigationController *)curVC;
+        [nav popViewControllerAnimated:YES];
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)((dismissSpeed*presentCount + popSpeed*pushCount) * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            [nav popToRootViewControllerAnimated:YES];
             return [self yf_closeAllViewControllers:nav];
         });
     }
@@ -73,10 +74,7 @@ static float popSpeed = 0.3;
     if (curVC.presentingViewController) {
         presentCount ++;
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)((dismissSpeed*presentCount + popSpeed*pushCount) * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            NSLog(@"%@---- %d -----%d    3", [curVC class], presentCount, pushCount);
-            [curVC dismissViewControllerAnimated:YES completion:^{
-                
-            }];
+            [curVC dismissViewControllerAnimated:YES completion:nil];
             return [self yf_closeAllViewControllers:[curVC presentingViewController]];
         });
     }

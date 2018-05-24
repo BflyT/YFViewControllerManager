@@ -16,6 +16,11 @@
 
 @implementation MineViewController
 
+//- (void)viewWillAppear:(BOOL)animated{
+//    [super viewWillAppear:animated];
+//    self.tabBarController.tabBar.hidden = NO;
+//}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor blueColor];
@@ -24,6 +29,7 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     LoginNavViewController *loginVC = [[LoginNavViewController alloc] initWithRootViewController:[[LogViewController alloc] init]];
+//    self.hidesBottomBarWhenPushed = YES;
     [self presentViewController:loginVC animated:YES completion:nil];
 }
 
