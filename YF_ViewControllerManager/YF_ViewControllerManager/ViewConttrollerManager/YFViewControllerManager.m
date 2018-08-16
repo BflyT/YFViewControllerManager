@@ -42,7 +42,6 @@ static float popSpeed = 0.25;
         //这里要做一些处理，因为在实际测试中会发现dismiss之后，curVC会是tabbar，但是并没有真正返回到tabbar，故此处需要重新校验是否已经结束
         //具体的逻辑需要根据实际业务架构来调整
         if (rootVC.childViewControllers[rootVC.selectedIndex].childViewControllers.count > 1) {
-//            NSLog(@"%@---- %d -----%d   4", [curVC class], presentCount, pushCount);
             return [self yf_closeAllViewControllers:rootVC.childViewControllers[rootVC.selectedIndex]];
         }
         if ([rootVC.childViewControllers[rootVC.selectedIndex].childViewControllers.lastObject presentingViewController]){
@@ -50,7 +49,6 @@ static float popSpeed = 0.25;
         }
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)((dismissSpeed*presentCount + popSpeed*pushCount) * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [rootVC setSelectedIndex:0];
-            NSLog(@"%@---- %d -----%d    1", [curVC class], presentCount, pushCount);
             return;
         });
     }
@@ -59,21 +57,26 @@ static float popSpeed = 0.25;
     //因为如果要有nav的返回动画就不能先dismiss，nav有可能就是present出来的
     if ([curVC isKindOfClass:[UINavigationController class]] && curVC.childViewControllers.count > 1) {
         pushCount ++;
-//        NSLog(@"%@---- pr: %d ----- pu: %d    2", [curVC class], presentCount, pushCount);
         UINavigationController *nav = (UINavigationController *)curVC;
         [nav popViewControllerAnimated:YES];
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)((dismissSpeed*presentCount + popSpeed*pushCount) * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             return [self yf_closeAllViewControllers:nav];
         });
-    }
-    //最后处理模态
-    //为什么？
-    //原因同上
-    if (curVC.presentingViewController) {
+    }else if (curVC.presentationController) {
+        //最后处理模态
+        //为什么？
+        //原因同上
         presentCount ++;
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)((dismissSpeed*presentCount + popSpeed*pushCount) * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [curVC dismissViewControllerAnimated:YES completion:nil];
             return [self yf_closeAllViewControllers:[curVC presentingViewController]];
+        });
+    }else{
+        UITabBarController *rootVC = (UITabBarController *)curVC.view.window.rootViewController;
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)((dismissSpeed*presentCount + popSpeed*pushCount) * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [rootVC setSelectedIndex:0];
+            
+            return ;
         });
     }
 }
