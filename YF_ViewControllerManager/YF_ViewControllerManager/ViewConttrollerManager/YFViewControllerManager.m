@@ -7,8 +7,6 @@
 //
 
 #import "YFViewControllerManager.h"
-#import "RootTabBarController.h"
-#import "BaseNavigationController.h"
 
 @implementation YFViewControllerManager
 
@@ -38,8 +36,8 @@ static float popSpeed = 0.25;
         return;
     }
     //首先如果在根控制器则不用返回
-    if ([curVC isKindOfClass:[RootTabBarController class]]) {
-        RootTabBarController *rootVC = (RootTabBarController *)curVC;
+    if ([curVC isKindOfClass:[UITabBarController class]]) {
+        UITabBarController *rootVC = (UITabBarController *)curVC;
         
         //这里要做一些处理，因为在实际测试中会发现dismiss之后，curVC会是tabbar，但是并没有真正返回到tabbar，故此处需要重新校验是否已经结束
         //具体的逻辑需要根据实际业务架构来调整
